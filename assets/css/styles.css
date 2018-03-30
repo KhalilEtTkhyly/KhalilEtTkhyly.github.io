@@ -1,0 +1,334 @@
+/**
+ *
+ * 1. Header
+ *
+ */
+
+body {
+	background: url('../images/bg.jpg'), #1d1f42;
+	background-position: center;
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.site-header {
+	position: fixed;
+	width: 100vw;
+
+	-webkit-transition: background-color .2s linear;
+	transition: background-color .2s linear;
+}
+
+.darken {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+ .site-nav {
+ 	height: 100px;
+ }
+
+.logo  {
+	margin-bottom: 0 !important;
+}
+
+.logo a {
+	display: block;
+	width: 42px;
+	height: 100px;
+	background: url('../images/logo.png') no-repeat center center;
+}
+
+ .site-menu {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ 	height: 100%;
+ 	margin-bottom: 0;
+ }
+
+.site-menu li {
+	list-style: none;
+}
+
+.site-menu li a {
+	color: white;
+	font-size: 18px;
+
+	-webkit-transition: color .2s linear;
+}
+
+.site-menu li a:hover {
+	color: #00beff;
+}
+
+.site-menu li:last-child {
+	margin-left: 24px;
+}
+
+/**
+ *
+ * 1. Banner
+ *
+ */
+
+ .banner {
+ 	padding-top: 400px;
+ 	color: white;
+ }
+
+ .banner h1 {
+ 	margin-bottom: 24px;
+ }
+
+ .banner h6 {
+ 	line-height: 28px;
+ 	font-weight: 500;
+ }
+
+
+/**
+ *
+ * Section Navigation
+ *
+ */
+
+.section-nav {
+	position: fixed;
+	right: 150px;
+	top: 45%;
+}
+
+.section-nav li {
+	list-style: none;
+}
+
+.section-nav li .circle {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	display: block;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.section-nav li .circle.active {
+	background: #ff7e00;
+}
+
+/**
+ *
+ * 1. AboutMe
+ *
+ */
+
+.aboutMe {
+	padding-top: 400px;
+	padding-bottom: 600px;
+	color: white;
+}
+
+.aboutMe h1 {
+	margin-bottom: 24px;
+	font-weight: 700;
+}
+
+.aboutMe p {
+	font-size: 22px;
+	line-height: 40px !important;
+}
+
+.seperator {
+	width: 150px;
+	height: 4px;
+	background-color: #00beff;
+	margin-bottom: 48px;
+}
+
+.aboutMe h1 span {
+	color: #00beff;
+	text-transform: capitalize;
+}
+
+.seperator {
+
+}
+
+.aboutMe p {
+	line-height: 28px;
+	font-weight: 500;
+	width: 75%;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+/**
+ *
+ * 1. Portfolio
+ *
+ */
+
+.portfolio {
+	padding-bottom: 150px;
+	color: white;
+}
+
+ .portfolio h1 {
+ 	margin-bottom: 24px;
+ }
+
+.portfolio h1 span {
+	color: #00beff;
+	text-transform: capitalize;
+}
+
+.gallery {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.gallery_list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.hover-state {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	-webkit-transition: opacity .5s linear;
+	transition: opacity .5s linear;
+	opacity: 0;	
+}
+
+.hover-state span {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgba(0, 190, 255, .25);
+	text-align: center;
+	line-height: 50px;
+}
+
+.hover-state span a {
+	color: white;
+	font-size: 20px;
+}
+
+.box {
+	width: 100%;
+	position: relative;
+}
+
+.gallery_list > [class*="col"] .box:hover .hover-state {
+	opacity: 1;
+}
+
+.gallery_list > [class*="col"] {
+	margin-bottom: 30px;
+}
+
+.box img {
+	width: 100%;
+	min-height: 1px;
+}
+
+/**
+ *
+ * Footer
+ *
+ */
+
+ .site-footer {
+ 	color: white;
+ }
+
+ .site-footer p {
+ 	line-height: 100px;
+ 	margin-bottom: 0;
+ }
+
+
+/**
+ *
+ * custom scrollbar
+ *
+ */
+ /* For the "inset" look only */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,255,255,0.2); 
+}
+
+
+/**
+ *
+ * Media Queries
+ *
+ */
+
+@media screen and (max-width: 1200px) {
+ 	.section-nav {
+ 		right: 50px;
+ 	}
+ } 
+
+ @media screen and (max-width: 992px) {
+ 	.logo a {
+ 		width: 100%;
+ 	}
+ 	.site-footer {
+ 		text-align: center;
+ 	}
+ 	.site-footer p {
+ 		line-height: 25px;
+ 		margin-top: 24px;
+ 	}
+ } 
+
+
+@media screen and (max-width: 768px) {
+ 	.section-nav {
+ 		display: none;
+ 	}
+ } 

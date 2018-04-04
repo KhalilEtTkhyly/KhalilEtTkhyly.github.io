@@ -5,10 +5,10 @@
  */
 
 body {
-	background-position: center !important;
-	background-repeat: no-repeat !important; 
-	background-attachment: fixed !important;
-	background-size: cover !important;
+	background-position: center !important; // please work
+	background-repeat: no-repeat !important;  // please work
+	background-attachment: fixed !important; // please work
+	background-size: cover !important; // please work
 	height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;

@@ -5,11 +5,10 @@
  */
 
 body {
-	background: url('../images/bg.jpg'), #1d1f42;
-	background-position: center;
-	background-repeat: no-repeat; 
-	background-attachment: fixed;
-	background-size: cover;
+	background-position: center !important;
+	background-repeat: no-repeat !important; 
+	background-attachment: fixed !important;
+	background-size: cover !important;
 	height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;

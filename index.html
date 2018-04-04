@@ -11,24 +11,21 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
-	<script>
-		document.addEventListener("DOMContentLoaded", function(event) {
-			document.getElementById('loader').style.display = "none";
-		});
-	</script>
+
 </head>
 <body>
-	
-	<div class="sk-cube-grid" id="loader">
-	  <div class="sk-cube sk-cube1"></div>
-	  <div class="sk-cube sk-cube2"></div>
-	  <div class="sk-cube sk-cube3"></div>
-	  <div class="sk-cube sk-cube4"></div>
-	  <div class="sk-cube sk-cube5"></div>
-	  <div class="sk-cube sk-cube6"></div>
-	  <div class="sk-cube sk-cube7"></div>
-	  <div class="sk-cube sk-cube8"></div>
-	  <div class="sk-cube sk-cube9"></div>
+	<div id="cover">
+		<div class="sk-cube-grid" id="loader">
+		  <div class="sk-cube sk-cube1"></div>
+		  <div class="sk-cube sk-cube2"></div>
+		  <div class="sk-cube sk-cube3"></div>
+		  <div class="sk-cube sk-cube4"></div>
+		  <div class="sk-cube sk-cube5"></div>
+		  <div class="sk-cube sk-cube6"></div>
+		  <div class="sk-cube sk-cube7"></div>
+		  <div class="sk-cube sk-cube8"></div>
+		  <div class="sk-cube sk-cube9"></div>
+		</div>
 	</div>
 
 	<header class="site-header">
@@ -157,6 +154,11 @@ and implementing it, <br> That’s what i like about it.</h6>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/jquery.smoothscroll.min.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			document.getElementById('cover').style.display = "none";
+		});
+	</script>
 
 </body>
 </html>

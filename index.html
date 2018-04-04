@@ -158,7 +158,12 @@ and implementing it, <br> That’s what i like about it.</h6>
 		$(document).ready(function() {
 			$('<img/>').attr('src', 'assets/images/bg.jpg').on('load', function() {
 			   $(this).remove(); // prevent memory leaks as @benweet suggested
-			   $('body').css('background', 'url(assets/images/bg.jpg), #1d1f42');
+			   $('body').css('background', 'url(assets/images/bg.jpg)');
+			   $('body').css('background-position','center');
+			   $('body').css('background-repeat','no-repeat');
+			   $('body').css('background-attachment','fixed');
+			   $('body').css('background-size','cover');
+
 			   $("#cover").fadeOut();
 			});
 		})

@@ -155,9 +155,13 @@ and implementing it, <br> That’s what i like about it.</h6>
 	<script src="assets/js/jquery.smoothscroll.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script>
-		document.addEventListener("DOMContentLoaded", function(event) {
-			document.getElementById('cover').style.display = "none";
-		});
+		$(document).ready(function() {
+			$('<img/>').attr('src', 'assets/images/bg.jpg').on('load', function() {
+			   $(this).remove(); // prevent memory leaks as @benweet suggested
+			   $('body').css('background', 'url(assets/images/bg.jpg), #1d1f42');
+			   $("#cover").fadeOut();
+			});
+		})
 	</script>
 
 </body>

@@ -339,6 +339,14 @@ body {
  * CSS Loder
  *
  */
+ #cover {
+ 	width: 100vw;
+ 	height: 100vh;
+	z-index: 9999;
+ 	background-color: white;
+ 	position: fixed;
+ }
+
  .sk-cube-grid {
 	position: fixed;
 	top: 50%;
@@ -347,6 +355,7 @@ body {
 	height: 40px;
 	margin-top: -20px;
 	margin-left: -20px;
+	z-index: 99999;
 }
 
 .sk-cube-grid .sk-cube {
